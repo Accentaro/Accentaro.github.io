@@ -1,2 +1,2 @@
-# Stand-Starter-Guide.github.io
+# Accentaro.github.io
 A collection of guides and FAQ for stand
