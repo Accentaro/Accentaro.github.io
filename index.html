@@ -35,7 +35,7 @@
             text-decoration: none;
         }
         nav a:hover {
-            background-color: #00b8d4;
+            background-color: #ff08e8; /* Change hover color for all links */
             color: #1e1e1e;
         }
         nav ul {
@@ -65,6 +65,50 @@
             font-size: 12px;
             color: #808080;
         }
+
+        /* Dropdown styles */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #2d2d2d;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: #d4d4d4;
+            padding: 8px 16px; /* Adjust padding as needed */
+            text-decoration: none;
+            display: block;
+            font-size: 14px; /* Adjust font size as needed */
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ff08e8; /* Change hover highlight color */
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #ff08e8;
+        }
+
+        /* Ensure text remains black even when unfocused */
+        .dropdown-content a:focus {
+            color: #d4d4d4;
+        }
+
+        /* Remove blue highlight on unfocused text */
+        .dropdown-content a:focus-visible {
+            outline: none;
+        }
     </style>
 </head>
 <body>
@@ -77,16 +121,22 @@
         <a href="faq.html">FAQ</a>
         <a href="tutorials.html">Tutorials</a>
         <a href="troubleshooting.html">Troubleshooting</a>
-        <a href="#">Downloads</a>
+        <div class="dropdown">
+            <a href="#" class="dropbtn">Downloads</a>
+            <div class="dropdown-content">
+                <a href="lua_scripts.html">Lua Scripts</a>
+                <a href="vehicles.html">Vehicles</a>
+                <a href="constructs.html">Constructs</a>
+                <a href="outfits.html">Outfits</a>
+                <a href="themes.html">Themes</a>
+                <a href="dlc.html">DLC</a>
+                <a href="asi_mods.html">ASI Mods</a>
+                <a href="misc.html">Miscellaneous</a>
+            </div>
+        </div>
         <ul>
-            <li><a href="lua_scripts.html">Lua Scripts</a></li>
-            <li><a href="vehicles.html">Vehicles</a></li>
-            <li><a href="constructs.html">Constructs</a></li>
-            <li><a href="outfits.html">Outfits</a></li>
-            <li><a href="themes.html">Themes</a></li>
-            <li><a href="dlc.html">DLC</a></li>
-            <li><a href="asi_mods.html">ASI Mods</a></li>
-            <li><a href="misc.html">Miscellaneous</a></li>
+            <li><a href="#">Some Link</a></li>
+            <!-- Add more links here if needed -->
         </ul>
     </nav>
 
