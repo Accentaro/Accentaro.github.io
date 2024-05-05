@@ -22,7 +22,13 @@
             background-color: #2d2d2d;
             padding: 20px;
             margin-bottom: 20px;
-            padding-left: 90px; /* Increase left padding */
+            padding-left: 275px; /* Increase left padding */
+            text-align: left; /* Align text to the left */
+        }
+        .important-info h2 {
+            color: #ff08e8; /* Color for the header */
+            font-size: 20px; /* Font size for the header */
+            margin-top: 0; /* Remove top margin for the header */
         }
         .important-info p {
             color: #d4d4d4;
@@ -37,6 +43,49 @@
             padding: 2px 5px;
             border-radius: 3px;
         }
+
+        /* New section styles */
+        .ban-info {
+            background-color: #2d2d2d;
+            padding: 20px;
+            padding-left: 275px; /* Increase left padding */
+            text-align: left; /* Align text to the left */
+            margin-bottom: 20px; /* Bottom margin */
+        }
+        .ban-info h2 {
+            color: #ff08e8; /* Color for the header */
+            font-size: 20px; /* Font size for the header */
+            margin-top: 0; /* Remove top margin for the header */
+        }
+        .ban-info p {
+            color: #d4d4d4;
+            margin-bottom: 10px;
+        }
+
+        /* New section styles */
+        .troubleshooting-info {
+            background-color: #2d2d2d;
+            padding: 20px;
+            padding-left: 275px; /* Increase left padding */
+            text-align: left; /* Align text to the left */
+            margin-bottom: 65px; /* Bottom padding */
+        }
+        .troubleshooting-info h2 {
+            color: #ff08e8; /* Color for the header */
+            font-size: 20px; /* Font size for the header */
+            margin-top: 0; /* Remove top margin for the header */
+        }
+        .troubleshooting-info p {
+            color: #d4d4d4;
+            margin-bottom: 10px;
+        }
+        .troubleshooting-info a {
+            color: #ff08e8; /* Change link color */
+        }
+        .troubleshooting-info a:hover {
+            text-decoration: underline; /* Add underline on hover */
+        }
+
         nav {
             width: 250px; /* Adjust as needed */
             height: 100%;
@@ -134,15 +183,77 @@
 
     <header>
         <h1>Stands Starter Guide</h1>
-        <div class="important-info">
-            <p>For important information, please read our <a href="https://stand.gg/help/terms-of-service">Terms of Service</a>.</p>
-            <p>Remember to backup your account ID, which looks like: <code>6a2b3c4d5e6f7g8h9i0j1k2l3m4n5o</code>, and your license key, which looks like: <code>Stand-6a2b3c4d5e6f7g8h9i0j1k2l3m4n5o</code>. When creating a Stand account, you'll be prompted to save these as a text file and send them to your email. You can find it by searching '<em>your-brain-replacement@stand.gg</em>'. If somehow you still manage to lose your account ID, we can only help if the following criteria are met:</p>
-            <ul>
-                <li>You have your original license key (Example: <code>Stand-k9x7j2h5c3p0v6q1n8m4r9b0z7a2y6w</code>).</li>
-                <li>Your account was created after Monday, 17 July 2023, 01:00.</li>
-            </ul>
-        </div>
     </header>
+
+    <div class="important-info">
+        <h2>Important Information</h2>
+        <p>For important information, please read our <a href="https://stand.gg/help/terms-of-service">Terms of Service</a>.</p>
+        <p>Remember to backup your account ID, which looks like: <code>6a2b3c4d5e6f7g8h9i0j1k2l3m4n5o</code>, and your license key, which looks like: <code>Stand-6a2b3c4d5e6f7g8h9i0j1k2l3m4n5o</code>. When creating a Stand account, you'll be prompted to save these as a text file and send them to your email. You can find it by searching '<em>your-brain-replacement@stand.gg</em>'. If somehow you still manage to lose your account ID, we can only help if the following criteria are met:</p>
+        <ul>
+            <li>You have your original license key (Example: <code>Stand-k9x7j2h5c3p0v6q1n8m4r9b0z7a2y6w</code>).</li>
+            <li>Your account was created after Monday, 17 July 2023, 01:00.</li>
+        </ul>
+    </div>
+
+    <div class="ban-info">
+        <h2>How to Avoid Bans Using Stand</h2>
+        <p>Avoid Account Sharing: Stand has a strict policy against account sharing. The automated system (B4) is highly sensitive to this activity. If detected, it results in an immediate permanent suspension without the possibility of review. Never share your account ID with anyone.</p>
+        <p>Regenerate License Responsibly: You can only regenerate your activation key twice a day. Excessive regeneration (D1) of your activation license can lead to a permanent suspension. Make sure to regenerate your license only when necessary and avoid any actions that may trigger the automated system. Sharing your account exacerbates this violation, leading to a swift suspension.</p>
+    </div>
+
+    <div class="troubleshooting-info">
+        <h2>Troubleshooting Guide for Stand Users</h2>
+        <ol>
+            <li>
+                <h3>Apply Default State:</h3>
+                <ul>
+                    <li>
+                        <strong>Focus Link:</strong>
+                        <a href="https://stand.gg/focus#Stand%3EApply%20Default%20State" style="color: #ff08e8;">Stand &gt; Apply Default State</a>
+                    </li>
+                    <li>
+                        <strong>Command Box Link:</strong>
+                        <a href="https://stand.gg/commandbox#default" style="color: #ff08e8;">U &gt; default &gt; Enter</a>
+                    </li>
+                    <li>
+                        If you encounter an issue, first apply the default state through the provided link.
+                    </li>
+                    <li>
+                        If the issue stops persisting after enabling default, it's likely a function you've saved to the profile.
+                    </li>
+                    <li>
+                        If the issue continues with default enabled, it's likely not Stand related.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h3>Disable Mods:</h3>
+                <ul>
+                    <li>
+                        Disable Lua/ASI mods and OpenIV mods to troubleshoot.
+                    </li>
+                    <li>
+                        Check if the issue is resolved after disabling these mods.
+                    </li>
+                    <li>
+                        If the issue persists even after disabling mods, it's likely not caused by external modifications.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h3>Seeking Help:</h3>
+                <ul>
+                    <li>
+                        After ensuring default state and disabling external mods, seek help in #support-and-help.
+                    </li>
+                    <li>
+                        Explain that you've tried default and removed external mods to no avail.
+                    </li>
+                </ul>
+            </li>
+        </ol>
+        <p>By following these steps, you can efficiently troubleshoot issues with Stand and determine whether they are related to your profile settings or external modifications.</p>
+    </div>
 
     <nav>
         <a href="pages/faq.html">FAQ</a>
