@@ -117,6 +117,40 @@
         nav ul li a {
             padding: 10px 0;
         }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #2d2d2d;
+            min-width: 160px;
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: #d4d4d4;
+            padding: 8px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #ff08e8;
+            color: #1e1e1e;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown:hover .dropbtn {
+            background-color: #ff08e8;
+        }
+        .dropdown-content a:focus {
+            color: #d4d4d4;
+        }
+        .dropdown-content a:focus-visible {
+            outline: none;
+        }
+
         main {
             margin-left: 270px; /* Adjust according to nav width */
             padding: 20px;
@@ -132,50 +166,6 @@
         footer p {
             font-size: 12px;
             color: #808080;
-        }
-
-        /* Dropdown styles */
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #2d2d2d;
-            min-width: 160px;
-            z-index: 1;
-        }
-
-        .dropdown-content a {
-            color: #d4d4d4;
-            padding: 8px 16px; /* Adjust padding as needed */
-            text-decoration: none;
-            display: block;
-            font-size: 14px; /* Adjust font size as needed */
-        }
-
-        .dropdown-content a:hover {
-            background-color: #ff08e8; /* Change hover highlight color */
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        .dropdown:hover .dropbtn {
-            background-color: #ff08e8;
-        }
-
-        /* Ensure text remains black even when unfocused */
-        .dropdown-content a:focus {
-            color: #d4d4d4;
-        }
-
-        /* Remove blue highlight on unfocused text */
-        .dropdown-content a:focus-visible {
-            outline: none;
         }
     </style>
 </head>
@@ -203,61 +193,41 @@
 
     <div class="troubleshooting-info">
         <h2>Troubleshooting Guide for Stand Users</h2>
-        <ol>
-            <li>
-                <h3>Apply Default State:</h3>
-                <ul>
-                    <li>
-                        <strong>Focus Link:</strong>
-                        <a href="https://stand.gg/focus#Stand%3EApply%20Default%20State" style="color: #ff08e8;">Stand &gt; Apply Default State</a>
-                    </li>
-                    <li>
-                        <strong>Command Box Link:</strong>
-                        <a href="https://stand.gg/commandbox#default" style="color: #ff08e8;">U &gt; default &gt; Enter</a>
-                    </li>
-                    <li>
-                        If you encounter an issue, first apply the default state through the provided link.
-                    </li>
-                    <li>
-                        If the issue stops persisting after enabling default, it's likely a function you've saved to the profile.
-                    </li>
-                    <li>
-                        If the issue continues with default enabled, it's likely not Stand related.
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <h3>Disable Mods:</h3>
-                <ul>
-                    <li>
-                        Disable Lua/ASI mods and OpenIV mods to troubleshoot.
-                    </li>
-                    <li>
-                        Check if the issue is resolved after disabling these mods.
-                    </li>
-                    <li>
-                        If the issue persists even after disabling mods, it's likely not caused by external modifications.
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <h3>Seeking Help:</h3>
-                <ul>
-                    <li>
-                        After ensuring default state and disabling external mods, seek help in #support-and-help.
-                    </li>
-                    <li>
-                        Explain that you've tried default and removed external mods to no avail.
-                    </li>
-                </ul>
-            </li>
-        </ol>
-        <p>By following these steps, you can efficiently troubleshoot issues with Stand and determine whether they are related to your profile settings or external modifications.</p>
+        <p>Apply Default State:</p>
+        <ul>
+            <li><strong>Focus Link:</strong> <a href="https://stand.gg/focus#Stand%3EApply%20Default%20State">Stand &gt; Apply Default State</a></li>
+            <li><strong>Command Box Link:</strong> <a href="https://stand.gg/commandbox#default">U &gt; default &gt; Enter</a></li>
+            <li>If you encounter an issue, first apply the default state through the provided link.</li>
+            <li>If the issue stops persisting after enabling default, it's likely a function you've saved to the profile.</li>
+            <li>If the issue continues with default enabled, it's likely not Stand related.</li>
+        </ul>
+        <p>Disable Mods:</p>
+        <ul>
+            <li>Disable Lua/ASI mods and OpenIV mods to troubleshoot.</li>
+            <li>Check if the issue is resolved after disabling these mods.</li>
+            <li>If the issue persists even after disabling mods, it's likely not caused by external modifications.</li>
+        </ul>
+        <p>Seeking Help:</p>
+        <ul>
+            <li>After ensuring default state and disabling external mods, seek help in #support-and-help.</li>
+            <li>Explain that you've tried default and removed external mods to no avail.</li>
+        </ul>
     </div>
 
     <nav>
         <a href="pages/faq.html">FAQ</a>
-        <a href="pages/tutorials.html">Tutorials</a>
+        <div class="dropdown">
+            <a href="#" class="dropbtn">Tutorials</a>
+            <div class="dropdown-content">
+                <a href="#">Take Host</a>
+                <a href="#">Gifting Vehicles</a>
+                <a href="#">Installing Lua Scripts</a>
+                <a href="#">How to Keep Benny's Wheels</a>
+                <a href="#">How to Install Themes</a>
+                <a href="#">How to Install ASI</a>
+                <!-- Add more tutorial links here -->
+            </div>
+        </div>
         <a href="pages/troubleshooting.html">Troubleshooting</a>
         <div class="dropdown">
             <a href="#" class="dropbtn">Downloads</a>
