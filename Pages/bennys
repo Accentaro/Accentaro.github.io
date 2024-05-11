@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to save custom wheels with Bennys</title>
+    <style>
+        body {
+            background-color: #1e1e1e;
+            color: #d4d4d4;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        h2 {
+            color: #ff08e8;
+            font-size: 20px;
+        }
+        ol {
+            margin-top: 0;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+            color: #ff08e8; /* Added to ensure consistent color for all list items */
+        }
+        strong {
+            color: #ff08e8;
+        }
+        a {
+            color: #ff08e8;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>How to save custom wheels with Bennys</h2>
+
+    <ol>
+        <li>
+            <strong>Spawn your desired car using the vehicle spawner tool:</strong>
+            <ul>
+                <li><a href="https://stand.gg/focus#Vehicle%3ESpawner">Vehicle Spawner</a></li>
+            </ul>
+        </li>
+        <li>
+            <strong>Customize the car to your preference at Los Santos Customs using Stand:</strong>
+            <ul>
+                <li><a href="https://stand.gg/focus#Vehicle%3ELos%20Santos%20Customs">Los Santos Customs</a></li>
+            </ul>
+        </li>
+        <li>
+            <strong>Install Benny's Wheels from the "Wheels" category (category 7 or 8) at Los Santos Customs:</strong>
+            <ul>
+                <li><a href="https://stand.gg/focus#Vehicle%3ELos%20Santos%20Customs%3EAppearance%3EWheels%3EWheels%20Category">Wheels Category</a></li>
+            </ul>
+        </li>
+        <li>
+            <strong>Enable "Disable LSC Restrictions" using the provided tool:</strong>
+            <ul>
+                <li><a href="https://stand.gg/focus#Online%3EEnhancements%3EDisable%20LSC%20Restrictions">Disable LSC Restrictions</a></li>
+            </ul>
+        </li>
+        <li><strong>Drive your customized car into Benny's Shop.</strong></li>
+        <li><strong>Purchase full coverage and a tracker for the car.</strong></li>
+        <li><strong>Choose and purchase your preferred tire design.</strong></li>
+        <li><strong>Store the customized car at your desired location.</strong></li>
+    </ol>
+
+    <iframe width="640" height="360" src="https://www.youtube.com/embed/rhROznOH1Ns" frameborder="0" allowfullscreen></iframe>
+</div>
+
+</body>
+</html>
